@@ -1,11 +1,11 @@
 {
   "name": "console-brain-games",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Terminal-based CLI Brain Games",
   "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
-   },
+  },
   "files": [
     "dist"
   ],
@@ -34,5 +34,8 @@
     "@babel/core": "^7.3.3",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.1"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.9"
   }
 }
