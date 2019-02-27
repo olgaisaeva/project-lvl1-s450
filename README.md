@@ -6,3 +6,7 @@
 ## brain-even installation
 
 [![asciicast](https://asciinema.org/a/oHATQkLVYtYGHqt1mEGvACfJ1.svg)](https://asciinema.org/a/oHATQkLVYtYGHqt1mEGvACfJ1)
+
+## brain-calc installation
+
+[![asciicast](https://asciinema.org/a/0NYRBZqSiwdM3iZV3Ov9tud50.svg)](https://asciinema.org/a/0NYRBZqSiwdM3iZV3Ov9tud50)

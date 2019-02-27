@@ -1,15 +1,15 @@
 import readlineSync from 'readline-sync';
+import { cons, car, cdr } from 'hexlet-pairs';
 
-const isEven = num => num % 2 === 0;
-const getRandomIntBetweenMinAndMax = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+const gameContent = (question, answer) => cons(question, answer);
+const getQuestion = content => car(content);
+const getAnswer = content => cdr(content);
 
 const roundsCount = 3;
 
-const makeGame = () => {
+const makeGame = (gameRules, getGameContent) => {
   const welcomeMessage = 'Welcome to the Brain Games!';
   console.log(welcomeMessage);
-
-  const gameRules = 'Answer "yes" if number even otherwise answer "no".\n';
   console.log(gameRules);
 
   const userName = readlineSync.question('May I have your name? ');
@@ -21,9 +21,10 @@ const makeGame = () => {
       return;
     }
 
-    const gameQuestion = getRandomIntBetweenMinAndMax(0, 1000);
+    const contentOfGameRound = getGameContent();
+    const gameQuestion = getQuestion(contentOfGameRound);
+    const correctAnswer = String(getAnswer(contentOfGameRound));
     console.log(`Question: ${gameQuestion}`);
-    const correctAnswer = isEven(gameQuestion) ? 'yes' : 'no';
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === correctAnswer) {
@@ -38,4 +39,4 @@ const makeGame = () => {
   iter(roundsCount);
 };
 
-export default makeGame;
+export { gameContent, makeGame };
