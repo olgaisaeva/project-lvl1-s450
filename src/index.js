@@ -3,8 +3,15 @@ import readlineSync from 'readline-sync';
 const isEven = num => num % 2 === 0;
 const getRandomIntBetweenMinAndMax = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
+const roundsCount = 3;
+
 const makeGame = () => {
-  console.log('Welcome to the Brain Games!\nAnswer "yes" if number even otherwise answer "no".\n');
+  const welcomeMessage = 'Welcome to the Brain Games!';
+  console.log(welcomeMessage);
+
+  const gameRules = 'Answer "yes" if number even otherwise answer "no".\n';
+  console.log(gameRules);
+
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
 
@@ -14,9 +21,9 @@ const makeGame = () => {
       return;
     }
 
-    const randomNumber = getRandomIntBetweenMinAndMax(0, 1000);
-    console.log(`Question: ${randomNumber}`);
-    const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
+    const gameQuestion = getRandomIntBetweenMinAndMax(0, 1000);
+    console.log(`Question: ${gameQuestion}`);
+    const correctAnswer = isEven(gameQuestion) ? 'yes' : 'no';
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === correctAnswer) {
@@ -28,7 +35,6 @@ const makeGame = () => {
     }
   };
 
-  const roundsCount = 3;
   iter(roundsCount);
 };
 
