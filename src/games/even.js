@@ -1,15 +1,17 @@
 import { gameContent, makeGame } from '..';
-import { isEven, getRandomIntBetweenMinAndMax } from '../utilities';
+import getRandomIntBetweenMinAndMax from '../utilities';
+
+const isEven = num => num % 2 === 0;
 
 const runBrainEvenGame = () => {
-  const gameRules = 'Answer "yes" if number even otherwise answer "no".\n';
+  const gameDescription = 'Answer "yes" if number even otherwise answer "no".';
   const getGameContent = () => {
     const question = getRandomIntBetweenMinAndMax(0, 100);
     const answer = isEven(question) ? 'yes' : 'no';
     return gameContent(question, answer);
   };
 
-  makeGame(gameRules, getGameContent);
+  makeGame(gameDescription, getGameContent);
 };
 
 export default runBrainEvenGame;

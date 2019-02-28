@@ -7,10 +7,10 @@ const getAnswer = content => cdr(content);
 
 const roundsCount = 3;
 
-const makeGame = (gameRules, getGameContent) => {
+const makeGame = (gameDescription, getGameContent) => {
   const welcomeMessage = 'Welcome to the Brain Games!';
   console.log(welcomeMessage);
-  console.log(gameRules);
+  console.log(`${gameDescription}\n`);
 
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);

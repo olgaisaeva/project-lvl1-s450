@@ -1,8 +1,8 @@
 import { gameContent, makeGame } from '..';
-import { getRandomIntBetweenMinAndMax } from '../utilities';
+import getRandomIntBetweenMinAndMax from '../utilities';
 
 const runBrainCalcGame = () => {
-  const gameRules = 'What is the result of the expression?\n';
+  const gameDescription = 'What is the result of the expression?';
   const getGameContent = () => {
     const num1 = getRandomIntBetweenMinAndMax(0, 100);
     const num2 = getRandomIntBetweenMinAndMax(0, 100);
@@ -20,7 +20,7 @@ const runBrainCalcGame = () => {
     }
   };
 
-  makeGame(gameRules, getGameContent);
+  makeGame(gameDescription, getGameContent);
 };
 
 export default runBrainCalcGame;
