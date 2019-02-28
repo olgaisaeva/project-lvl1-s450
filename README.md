@@ -10,3 +10,7 @@
 ## brain-calc installation
 
 [![asciicast](https://asciinema.org/a/0NYRBZqSiwdM3iZV3Ov9tud50.svg)](https://asciinema.org/a/0NYRBZqSiwdM3iZV3Ov9tud50)
+
+## brain-gcd installation
+
+[![asciicast](https://asciinema.org/a/IBekaheEv7HW5xvxwDwL4rF9W.svg)](https://asciinema.org/a/IBekaheEv7HW5xvxwDwL4rF9W)
