@@ -18,3 +18,7 @@
 ## brain-progression installation
 
 [![asciicast](https://asciinema.org/a/qFh9IZxHgcxbj9NsTWGG7bl45.svg)](https://asciinema.org/a/qFh9IZxHgcxbj9NsTWGG7bl45)
+
+## brain-prime installation
+
+[![asciicast](https://asciinema.org/a/sHQRPBDUkhQDAujT7fNzw0czM.svg)](https://asciinema.org/a/sHQRPBDUkhQDAujT7fNzw0czM)
