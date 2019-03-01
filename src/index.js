@@ -23,7 +23,7 @@ const makeGame = (gameDescription, getGameContent) => {
 
     const contentOfGameRound = getGameContent();
     const gameQuestion = getQuestion(contentOfGameRound);
-    const correctAnswer = String(getAnswer(contentOfGameRound));
+    const correctAnswer = getAnswer(contentOfGameRound);
     console.log(`Question: ${gameQuestion}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
