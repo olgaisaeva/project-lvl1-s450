@@ -14,3 +14,7 @@
 ## brain-gcd installation
 
 [![asciicast](https://asciinema.org/a/IBekaheEv7HW5xvxwDwL4rF9W.svg)](https://asciinema.org/a/IBekaheEv7HW5xvxwDwL4rF9W)
+
+## brain-progression installation
+
+[![asciicast](https://asciinema.org/a/qFh9IZxHgcxbj9NsTWGG7bl45.svg)](https://asciinema.org/a/qFh9IZxHgcxbj9NsTWGG7bl45)
