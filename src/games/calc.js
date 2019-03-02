@@ -10,11 +10,11 @@ const runBrainCalcGame = () => {
 
     switch (numOfOperation) {
       case 1:
-        return gameContent(`${num1} + ${num2}`, `${num1 + num2}`);
+        return gameContent(`${num1} + ${num2}`, String(num1 + num2));
       case 2:
-        return gameContent(`${num1} - ${num2}`, `${num1 - num2}`);
+        return gameContent(`${num1} - ${num2}`, String(num1 - num2));
       case 3:
-        return gameContent(`${num1} * ${num2}`, `${num1 * num2}`);
+        return gameContent(`${num1} * ${num2}`, String(num1 * num2));
       default:
         return null;
     }

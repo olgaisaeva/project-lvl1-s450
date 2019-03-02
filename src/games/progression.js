@@ -26,7 +26,7 @@ const runBrainProgressionGame = () => {
     );
     const positionOfHiddenElement = getRandomIntBetweenMinAndMax(1, progressionLength);
 
-    const answer = `${firstTerm + (positionOfHiddenElement - 1) * commonDifference}`;
+    const answer = String(firstTerm + (positionOfHiddenElement - 1) * commonDifference);
     const question = progression.replace(`${answer}`, '..');
 
     return gameContent(question, answer);
