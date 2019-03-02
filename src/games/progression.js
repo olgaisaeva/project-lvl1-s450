@@ -17,8 +17,8 @@ const generateArithmeticProgression = (length, commonDiff, initialTerm) => {
 const runBrainProgressionGame = () => {
   const gameDescription = 'What number is missing in the progression?';
 
+  const progressionLength = 10;
   const getGameContent = () => {
-    const progressionLength = 10;
     const commonDifference = getRandomIntBetweenMinAndMax(1, 10);
     const firstTerm = getRandomIntBetweenMinAndMax(1, 10);
     const progression = generateArithmeticProgression(
