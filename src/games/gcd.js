@@ -9,7 +9,7 @@ const runBrainGcdGame = () => {
     const num1 = getRandomIntBetweenMinAndMax(0, 100);
     const num2 = getRandomIntBetweenMinAndMax(0, 100);
     const question = `${num1} ${num2}`;
-    const answer = gcd(num1, num2);
+    const answer = `${gcd(num1, num2)}`;
     return gameContent(question, answer);
   };
 
