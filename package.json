@@ -1,6 +1,6 @@
 {
   "name": "console-brain-games",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Terminal-based CLI Brain Games",
   "main": "",
   "bin": {
